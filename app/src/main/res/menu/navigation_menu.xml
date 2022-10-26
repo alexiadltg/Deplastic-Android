@@ -4,32 +4,24 @@
     tools:ignore="HardcodedText">
 
     <item
-        android:id="@+id/nav_map"
+        android:id="@id/nav_map"
         android:title="Map" />
-
     <item
-        android:id="@+id/nav_calendar"
+        android:id="@id/nav_calendar"
         android:title="Events" />
-
     <item
-        android:id="@+id/nav_config"
+        android:id="@id/nav_config"
         android:title="Configuration" />
-
     <item
-        android:id="@+id/nav_news"
+        android:id="@id/nav_news"
         android:title="News" />
-
     <item
-        android:id="@+id/nav_user"
+        android:id="@id/nav_user"
         android:title="User" />
-
     <item
-        android:id="@+id/nav_rewards"
+        android:id="@id/nav_rewards"
         android:title="Reward Store" />
-
     <item
-        android:id="@+id/nav_nocontact"
+        android:id="@id/nav_nocontact"
         android:title="Contact Us" />
-
-
 </menu>

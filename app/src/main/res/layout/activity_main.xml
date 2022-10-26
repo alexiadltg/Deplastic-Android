@@ -16,13 +16,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <FrameLayout
+            android:id="@+id/flContent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
-            android:gravity="center"
-            android:text="hehe, testing"
-            android:textSize="18sp" />
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <!-- this the navigation view which draws and shows the navigation drawer -->
