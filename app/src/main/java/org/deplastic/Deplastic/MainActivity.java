@@ -32,25 +32,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (actionBarDrawerToggle.onOptionsItemSelected(item)) {
-            onNavigationDrawerItemSelected(item.getItemId());
-            return true;
+            Fragment fragment = new config();
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+
+            if ("Map".equals(item.getTitle())) {
+                fragment = new map();
+            }
+            else if("Events".equals(item.getTitle())){
+                fragment = new calendar();
+            }
+            else if("Configuration".equals((item.getTitle()))){
+                fragment = new config();
+            }
+            fragmentManager.beginTransaction()
+                    .replace(R.id.flContent,fragment)
+                    .commit();
         }return super.onOptionsItemSelected(item);
     }
 
-    public void onNavigationDrawerItemSelected(int position) {
-        // update the main content by replacing fragments
-        Fragment fragment;
-        FragmentManager fragmentManager = getSupportFragmentManager(); // For AppCompat use getSupportFragmentManager
-        switch(position) {
-            default:
-            case 0:
-                fragment = new map();
-                break;
-            case 1:
-                fragment = new calendar();
-                break;
-        }fragmentManager.beginTransaction()
-                .replace(R.id.flContent, fragment)
-                .commit();
-    }
 }

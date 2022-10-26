@@ -2,6 +2,8 @@
     <string name="app_name">Deplastic</string>
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">calendar hehe</string>
+    <string name="config">Error?</string>
+    <string name="calendar">CALENDAR!</string>
+    <string name="map">espero que aqui vagi un mapa algun dia</string>
 </resources>
