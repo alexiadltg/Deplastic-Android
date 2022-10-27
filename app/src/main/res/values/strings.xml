@@ -6,4 +6,12 @@
     <string name="config">Error?</string>
     <string name="calendar">CALENDAR!</string>
     <string name="map">espero que aqui vagi un mapa algun dia</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_cal">Events</string>
+    <string name="menu_config">Configuration</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_desc">Navigation Header</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
 </resources>
