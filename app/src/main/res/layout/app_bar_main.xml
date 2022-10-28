@@ -10,12 +10,11 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:theme="@style/Theme.Deplastic.AppBarOverlay">
+        android:theme="@style/Theme.Deplastic.ActualActionBar">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width = "match_parent"
-            android:background="?attr/colorPrimary"
               app:popupTheme="@style/Theme.Deplastic.PopupOverlay"
             android:layout_height = "?attr/actionBarSize" />
 
