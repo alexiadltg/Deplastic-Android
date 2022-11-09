@@ -33,7 +33,7 @@ import org.deplastic.Deplastic.BuildConfig;
 import org.deplastic.Deplastic.MainActivity;
 import org.deplastic.Deplastic.R;
 
-public class MapFragment extends Fragment {
+public class MapFragment<S, V, S1> extends Fragment {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int DEFAULT_ZOOM = 15;
@@ -98,11 +98,12 @@ public class MapFragment extends Fragment {
                 // Get the current location of the device and set the position of the map.
                 getDeviceLocation(googleMap);
 
-                //TODO import variables from BD
+                //TODO import variables from BD!!!!!!!
+
                 LatLng sydney = new LatLng(-33.852, 151.211);
-                LatLng barcelona = new LatLng(-30.852, 150.211);
                 googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-                googleMap.addMarker(new MarkerOptions().position(barcelona).title("Marker in Barcelona"));
+
+                //TODO don't do anything or figure out what this does :3
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
             });
